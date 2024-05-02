@@ -31,9 +31,9 @@ SECRET_KEY = env(f"{STATUS}_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True if STATUS == "DEV" else False
 
-ALLOWED_HOSTS = ["localhost"] if STATUS == "DEV" else ["*.vercel.app"]
+ALLOWED_HOSTS = ["localhost"] if STATUS == "DEV" else ["bryckel.vercel.app"]
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:3000"] if STATUS == "DEV" else []
+CORS_ALLOWED_ORIGINS = ["http://localhost:3000"] if STATUS == "DEV" else ["https://bryckel-frontend.vercel.app"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
