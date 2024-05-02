@@ -31,9 +31,9 @@ SECRET_KEY = env(f"{STATUS}_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True if STATUS == "DEV" else False
 
-ALLOWED_HOSTS = ["localhost"] if STATUS == "DEV" else ["13.201.40.24", "localhost"]
+ALLOWED_HOSTS = ["localhost"] if STATUS == "DEV" else ["*.vercel.app"]
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:3000"] if STATUS == "DEV" else ["http://13.201.40.24:80", "http://localhost:3000"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:3000"] if STATUS == "DEV" else []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -76,7 +76,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'backend.wsgi.application'
+WSGI_APPLICATION = 'backend.wsgi.app'
 
 
 DATABASES = {
