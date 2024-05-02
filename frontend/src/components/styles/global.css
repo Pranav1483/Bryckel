@@ -1,0 +1,13 @@
+.bn-container {
+    --bn-border-radius: 0;
+    --bn-shadow-medium: none;
+    --bn-shadow-light: none;
+    --bn-border: none;
+    --bn-border-radius-small: 0;
+    --bn-border-radius-medium: 0;
+    --bn-border-radius-large: 0;
+  }
+
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
